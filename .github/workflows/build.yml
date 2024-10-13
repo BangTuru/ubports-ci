@@ -57,12 +57,18 @@ jobs:
         sudo rm -rf \
           /usr/share/dotnet \
           /etc/mysql \
-          /etc/php
+          /etc/php \
+          /opt/hostedtoolcache
         mkdir -p ~/bin
         wget 'https://storage.googleapis.com/git-repo-downloads/repo' -P ~/bin
         chmod +x ~/bin/repo
         git config --global user.name "UBports Redmi 4A CI"
         git config --global user.email "thisemaildoesnotexist@exist.com"
+
+    - name: Check free space
+      run: |
+         echo "Free space:"
+         df -h
 
     - name: Downloading source code
       run: |
