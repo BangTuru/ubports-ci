@@ -5,8 +5,12 @@
     fetch="https://github.com/LineageOS"
     revision="lineage-21" />
 
-	<project path="device/xiaomi/Mi8937" name="android_device_xiaomi_Mi8937" remote="LineageOS" revision="lineage-21" />
-	<project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common" remote="LinageOS" revision="lineage-21" />
-	<project path="vendor/xiaomi/" name="proprietary_vendor_xiaomi_Mi8917" remote="TheMuppets" />
+<remote name="TheMuppets"
+    fetch="https://github.com/TheMuppets"
+    revision="lineage-21" />
+
+<project path="device/xiaomi/Mi8937" name="android_device_xiaomi_Mi8937" remote="LineageOS" revision="lineage-21" />
+<project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common" remote="LineageOS" revision="lineage-21" />
+<project path="vendor/xiaomi/" name="proprietary_vendor_xiaomi_Mi8917" remote="TheMuppets" />
 
 </manifest>
