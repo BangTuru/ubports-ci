@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="iusmac"
+           fetch="https://github.com/iusmac"
+           revision="11-dev" />
 
-<remote name="LineageOS"
-    fetch="https://github.com/LineageOS"
-    revision="lineage-21" />
-
-<remote name="TheMuppets"
-    fetch="https://github.com/TheMuppets"
-    revision="lineage-21" />
-
-<project path="device/xiaomi/Mi8937" name="android_device_xiaomi_Mi8937" remote="LineageOS" revision="lineage-21" />
-<project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common" remote="LineageOS" revision="lineage-21" />
-<project path="vendor/xiaomi/" name="proprietary_vendor_xiaomi_Mi8917" remote="TheMuppets" />
-
+  <project path="device/xiaomi/rova" name="device_rova" remote="iusmac"/>
+  <project path="kernel/xiaomi/rova" name="kernel_rova" remote="iusmac"/>
+  <project path="vendor/xiaomi/" name="vendor_rova" remote="iusmac"/>
 </manifest>
