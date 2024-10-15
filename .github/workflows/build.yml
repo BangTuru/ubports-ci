@@ -96,7 +96,7 @@ jobs:
         source halium.env
         mkdir -p $ANDROID_ROOT
         cd $ANDROID_ROOT
-        repo init -u https://github.com/Halium/android -b halium-13.0 --depth=1
+        repo init -u https://github.com/Halium/android -b halium-11.0 --depth=1
         mkdir -p $ANDROID_ROOT/.repo/local_manifests
         wget $MANIFESTURL -O $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml
         repo sync -c -j 8 --no-clone-bundle --no-tags
