@@ -46,8 +46,23 @@ jobs:
          sudo apt-get clean
          df -h
          echo "Removing large directories"
-         # deleting 15GB
-         rm -rf /usr/share/dotnet/
+         # Remove software and language runtimes we're not using
+         sudo rm -rf \
+         "$AGENT_TOOLSDIRECTORY" \
+         /opt/google/chrome \
+         /opt/microsoft/msedge \
+         /opt/microsoft/powershell \
+         /opt/pipx \
+         /usr/lib/mono \
+         /opt/ghc \
+         /usr/local/julia* \
+         /usr/local/lib/android \
+         /usr/local/lib/node_modules \
+         /usr/local/share/chromium \
+         /usr/local/share/powershell \
+         /usr/share/dotnet \
+         /usr/share/swift \
+         "/usr/local/share/boost"
          df -h
         
     - name: Checkout
